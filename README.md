@@ -1,7 +1,7 @@
 # Webpage
 A webpage in Ruby 
 
-Run the command install sinatra to install sinatra
+Run the command, gem install sinatra to install sinatra
 
 After that, make a folder called views and download index.erb inside it. 
 
