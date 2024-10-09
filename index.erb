@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Alphanumeric String Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+    .result {
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Random Alphanumeric String Generator</h1>
+
+    <form action="/generate" method="post">
+      <label for="length">Enter the length of the string:</label>
+      <input type="number" id="length" name="length" required>
+      <button type="submit">Generate</button>
+    </form>
+
+    <% if @random_string %>
+      <div class="result">
+        <strong>Random String:</strong> <%= @random_string %>
+      </div>
+    <% end %>
+  </div>
+</body>
+</html>
